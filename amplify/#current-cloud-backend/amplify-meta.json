@@ -1,0 +1,106 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kycapp1-dev-152920-authRole",
+      "UnauthRoleArn": "arn:aws:iam::973377233933:role/amplify-kycapp1-dev-152920-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::973377233933:role/amplify-kycapp1-dev-152920-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-kycapp1-dev-152920-deployment",
+      "UnauthRoleName": "amplify-kycapp1-dev-152920-unauthRole",
+      "StackName": "amplify-kycapp1-dev-152920",
+      "StackId": "arn:aws:cloudformation:us-east-1:973377233933:stack/amplify-kycapp1-dev-152920/93e76c10-9b45-11ee-9bc9-0e5bb964081d",
+      "AmplifyAppId": "d36oggacr9snmm"
+    }
+  },
+  "auth": {
+    "kycapp13f542905": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-kycapp1-dev-152920-deployment/amplify-cfn-templates/auth/kycapp13f542905-cloudformation-template.json",
+        "logicalId": "authkycapp13f542905"
+      },
+      "lastPushTimeStamp": "2023-12-15T13:12:54.530Z",
+      "output": {
+        "UserPoolId": "us-east-1_fsvbs1SzS",
+        "AppClientIDWeb": "148ldbjrb3popakaa40tc1s928",
+        "AppClientID": "fsj0b8ff2pn398iuom0vjjjki",
+        "IdentityPoolId": "us-east-1:beef4521-e599-4fd3-a1d5-16bf32695a64",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:973377233933:userpool/us-east-1_fsvbs1SzS",
+        "IdentityPoolName": "kycapp13f542905_identitypool_3f542905__dev",
+        "UserPoolName": "kycapp13f542905_userpool_3f542905"
+      },
+      "lastPushDirHash": "glYx77SMmmBUl8ihgQze/uIh2J0="
+    }
+  },
+  "predictions": {
+    "faceId": {
+      "providerPlugin": "awscloudformation",
+      "service": "Rekognition",
+      "dependsOn": [],
+      "identifyType": "identifyEntities",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-kycapp1-dev-152920-deployment/amplify-cfn-templates/predictions/faceId-template.json",
+        "logicalId": "predictionsfaceId"
+      },
+      "lastPushTimeStamp": "2023-12-15T13:12:55.159Z",
+      "output": {
+        "maxEntities": "0",
+        "celebrityDetectionEnabled": "true",
+        "region": "us-east-1"
+      },
+      "lastPushDirHash": "0ex1CYfdNuLRtkYAWF0XV1ndHSI="
+    },
+    "textID": {
+      "providerPlugin": "awscloudformation",
+      "service": "RekognitionAndTextract",
+      "dependsOn": [],
+      "identifyType": "identifyText",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-kycapp1-dev-152920-deployment/amplify-cfn-templates/predictions/textID-template.json",
+        "logicalId": "predictionstextID"
+      },
+      "lastPushTimeStamp": "2023-12-15T13:12:54.533Z",
+      "output": {
+        "format": "PLAIN | FORM | TABLE | ALL",
+        "region": "us-east-1"
+      },
+      "lastPushDirHash": "yKmefPG41CcmDf6AhvTjGl+UA1Y="
+    },
+    "textInterpret": {
+      "providerPlugin": "awscloudformation",
+      "service": "Comprehend",
+      "interpretType": "interpretText",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-kycapp1-dev-152920-deployment/amplify-cfn-templates/predictions/textInterpret-template.json",
+        "logicalId": "predictionstextInterpret"
+      },
+      "lastPushTimeStamp": "2023-12-15T13:12:55.159Z",
+      "output": {
+        "region": "us-east-1",
+        "type": "ENTITIES"
+      },
+      "lastPushDirHash": "Xk3ZBlqvsfNK5hjEAuBNfvhUmrI="
+    }
+  }
+}
