@@ -1,14 +1,18 @@
 [
     {
         "name":"smile",
-        "description":"Please smile !!!"
+        "description":"Please look at the camera and smile"
     },
     {
         "name":"lookRight",
-        "description":"Please turn your face to your right"
+        "description":"Please turn your head to the right"
     },
     {
         "name":"mouthOpen",
-        "description":"Please open your mouth :)"
+        "description":"Please open your mouth"
+    },
+    {
+        "name":"idRotation",
+        "description":"Please hold your ID card in front of the camera and slowly rotate it left to right to show the hologram/shiny stamp"
     }
 ]
