@@ -1,3 +1,6 @@
+use nvm to switch to node 16.x before runnnig npm i && npm start
+
+
 Before running npm install, you need to execute the following command in the terminal to set a parameter for Node.js:
 
 export NODE_OPTIONS=--openssl-legacy-provider #if you have issues
